@@ -1,7 +1,7 @@
 # Everlabs-TT
 
 ## Link
-[DEMO](https://Vadym-Mishchenko.github.io/everlabs-tt/)
+[DEMO](https://vadym-mishchenko.github.io/everlabs-tt/)
 
 ## Implementeated technologies
 - React, React hooks
