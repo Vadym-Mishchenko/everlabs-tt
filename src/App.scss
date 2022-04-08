@@ -1,0 +1,27 @@
+ .app {
+
+ }
+
+.header {
+  height: 72px;
+  line-height: 72px;
+  text-align: center;
+  background-color: #282c34;
+
+  &__link {
+    padding: 20px 40px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 40px;
+
+    transition: color 0.3s;
+
+    &:hover {
+      color: #97f0d2;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
