@@ -1,3 +1,105 @@
 .todos {
   text-align: center;
+
+  &__container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 524px;
+  }
+
+  &__title {
+    margin-bottom: 48px;
+  }
+
+  &__input {
+    padding: 0 10px;
+    width: 250px;
+    height: 29px;
+    border: none;
+    border-bottom: 1px solid #282c34;
+    outline: none;
+    background: none;
+    color: #282c34;
+  }
+
+  &__btn {
+    margin-bottom: 48px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    background: none;
+    border: 2px solid #282c34;
+    color: #282c34;
+
+    transition: all 0.3s;
+
+    &:hover {
+      background: #282c34;
+      color: #97f0d2;
+      transform: scale(105%);
+    }
+  }
+
+  &__check {
+    width: 60px;
+    height: 50px;
+    font-size: 12px;
+    background: none;
+    border: 2px solid #282c34;
+    color: #282c34;
+    box-shadow: 10px 5px 5px rgb(143, 143, 143);
+
+    transition: all 0.3s;
+
+    &:hover {
+      background: #282c34;
+      color: #97f0d2;
+      transform: scale(105%);
+    }
+  }
+
+  &__todo {
+    display: flex;
+    justify-content: center;
+
+    margin: 0 auto 24px;
+    padding: 14px;
+    width: 340px;
+    color: #282c34;
+    background: linear-gradient(90deg,
+        rgb(245, 245, 204) 0%,
+        rgb(236, 255, 65) 100%);
+    box-shadow: 10px 5px 5px rgb(143, 143, 143);
+
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(105%);
+    }
+
+    &--strike {
+      text-decoration: line-through;
+      text-decoration-color: red;
+    }
+  }
+
+  &__remove {
+    width: 60px;
+    height: 50px;
+    font-size: 12px;
+    cursor: pointer;
+    background: none;
+    border: 2px solid #282c34;
+    color: red;
+    box-shadow: 10px 5px 5px rgb(143, 143, 143);
+
+    transition: all 0.3s;
+
+    &:hover {
+      background: #282c34;
+      color: #97f0d2;
+      transform: scale(105%);
+    }
+  }
 }
