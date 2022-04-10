@@ -1,28 +1,40 @@
 .photos {
   text-align: center;
 
-  &__input {
-    height: 36px;
-    width: 240px;
-    margin-right: 12px;
-    border: 1px solid #282c34;
+  &__title {
+    margin-bottom: 48px;
+  }
 
-    &:focus {
-      border: 1px solid rgb(238, 99, 99);
+  &__input {
+    padding: 0 10px;
+    width: 250px;
+    height: 29px;
+    border: none;
+    border-bottom: 1px solid $color-main;
+    outline: none;
+    background: none;
+    color: $color-main;
+
+    &--error {
+      border-bottom: 1px solid $color-red;
     }
   }
 
   &__btn {
-    height: 42px;
-    cursor: pointer;
-    color: #fff;
-    background-color: #282c34;
-    border: 2px solid #282c34;
+    margin-bottom: 48px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    background: none;
+    border: 2px solid $color-main;
+    color: $color-main;
 
-    transition: color 0.3s;
+    transition: all 0.3s;
 
     &:hover {
-      color: #97f0d2;
+      background: $color-main;
+      color: $color-lagoone;
+      transform: scale(105%);
     }
   }
 }

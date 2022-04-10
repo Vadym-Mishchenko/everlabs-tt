@@ -17,10 +17,10 @@
     width: 250px;
     height: 29px;
     border: none;
-    border-bottom: 1px solid #282c34;
+    border-bottom: 1px solid $color-main;
     outline: none;
     background: none;
-    color: #282c34;
+    color: $color-main;
   }
 
   &__btn {
@@ -29,14 +29,14 @@
     height: 30px;
     font-size: 12px;
     background: none;
-    border: 2px solid #282c34;
-    color: #282c34;
+    border: 2px solid $color-main;
+    color: $color-main;
 
     transition: all 0.3s;
 
     &:hover {
-      background: #282c34;
-      color: #97f0d2;
+      background: $color-main;
+      color: $color-lagoone;
       transform: scale(105%);
     }
   }
@@ -46,15 +46,15 @@
     height: 50px;
     font-size: 12px;
     background: none;
-    border: 2px solid #282c34;
-    color: #282c34;
+    border: 2px solid $color-main;
+    color: $color-main;
     box-shadow: 10px 5px 5px rgb(143, 143, 143);
 
     transition: all 0.3s;
 
     &:hover {
-      background: #282c34;
-      color: #97f0d2;
+      background: $color-main;
+      color: $color-lagoone;
       transform: scale(105%);
     }
   }
@@ -66,7 +66,7 @@
     margin: 0 auto 24px;
     padding: 14px;
     width: 340px;
-    color: #282c34;
+    color: $color-main;
     text-decoration: none;
     background: linear-gradient(90deg,
         rgb(245, 245, 204) 0%,
@@ -81,7 +81,7 @@
 
     &--strike {
       text-decoration: line-through;
-      text-decoration-color: red;
+      text-decoration-color: $color-red;
     }
   }
 
@@ -91,15 +91,15 @@
     font-size: 12px;
     cursor: pointer;
     background: none;
-    border: 2px solid #282c34;
-    color: red;
+    border: 2px solid $color-main;
+    color: $color-red;
     box-shadow: 10px 5px 5px rgb(143, 143, 143);
 
     transition: all 0.3s;
 
     &:hover {
-      background: #282c34;
-      color: #97f0d2;
+      background: $color-main;
+      color: $color-lagoone;
       transform: scale(105%);
     }
   }

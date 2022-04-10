@@ -7,15 +7,15 @@
     height: 50px;
     font-size: 12px;
     background: none;
-    border: 2px solid #282c34;
-    color: #282c34;
+    border: 2px solid $color-main;
+    color: $color-main;
     box-shadow: 10px 5px 5px rgb(143, 143, 143);
 
     transition: all 0.3s;
 
     &:hover {
-      background: #282c34;
-      color: #97f0d2;
+      background: $color-main;
+      color: $color-lagoone;
       transform: scale(105%);
     }
   }

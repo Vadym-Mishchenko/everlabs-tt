@@ -1,23 +1,25 @@
- .app {
-
- }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 .header {
   height: 72px;
   line-height: 72px;
   text-align: center;
-  background-color: #282c34;
+  background-color: $color-main;
 
   &__link {
     padding: 20px 40px;
-    color: #fff;
+    color: $color-white;
     text-decoration: none;
     margin-right: 40px;
 
     transition: color 0.3s;
 
     &:hover {
-      color: #97f0d2;
+      color: $color-lagoone;
     }
 
     &:last-child {

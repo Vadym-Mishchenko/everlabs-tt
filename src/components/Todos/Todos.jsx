@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Todo } from './Todo';
 import { TodoForm } from './TodoForm';
+import { v4 as uuidv4 } from 'uuid';
 
 import '../Todos/Todos.scss';
 
@@ -17,7 +18,7 @@ export const Todos = () => {
   const addTodo = (userInput) => {
     if (userInput) {
       const newItem = {
-        id: todos.length + 1,
+        id: uuidv4(),
         task: userInput,
         complete: false
       }

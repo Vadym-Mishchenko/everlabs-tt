@@ -1,4 +1,4 @@
-import { Routes, Route, Link} from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 
 import './App.scss';
 
@@ -16,10 +16,10 @@ function App() {
         <Link className="header__link" to='/todos'>Todos</Link>
       </header>
       <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/todos' element={<Todos />}/>
-        <Route path='/photos' element={<Photos />}/>
-        <Route path='/todos/:id' element={<TodoId/>} />
+        <Route path='/' element={<Home />} />
+        <Route path='/todos' element={<Todos />} />
+        <Route path='/photos' element={<Photos />} />
+        <Route path='/todos/:id' element={<TodoId />} />
       </Routes>
     </div>
   );
