@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Todo } from './Todo';
 import { TodoForm } from './TodoForm';
 
@@ -6,7 +6,13 @@ import '../Todos/Todos.scss';
 
 
 export const Todos = () => {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState(
+    JSON.parse(localStorage.getItem('todos')) || []
+  );
+
+  useEffect(() => {
+    window.localStorage.setItem('todos', JSON.stringify(todos));
+  }, [todos])
 
   const addTodo = (userInput) => {
     if (userInput) {
