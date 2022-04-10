@@ -5,6 +5,7 @@ import './App.scss';
 import { Home } from './components/Home/Home';
 import { Todos } from './components/Todos/Todos';
 import { Photos } from './components/Photos/Photos';
+import { TodoId } from './components/Todos/TodoId';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/' element={<Home />}/>
         <Route path='/todos' element={<Todos />}/>
         <Route path='/photos' element={<Photos />}/>
+        <Route path='/todos/:id' element={<TodoId/>} />
       </Routes>
     </div>
   );

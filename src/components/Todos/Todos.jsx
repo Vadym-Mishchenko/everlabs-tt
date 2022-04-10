@@ -11,7 +11,7 @@ export const Todos = () => {
   const addTodo = (userInput) => {
     if (userInput) {
       const newItem = {
-        id: Math.random().toString(36).substring(2, 9),
+        id: todos.length + 1,
         task: userInput,
         complete: false
       }
