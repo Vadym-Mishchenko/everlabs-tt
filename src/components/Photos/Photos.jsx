@@ -27,6 +27,7 @@ export const Photos = () => {
     }
     else {
       setPhotoIdError(true);
+      setPhotoId('');
     }
   };
 
