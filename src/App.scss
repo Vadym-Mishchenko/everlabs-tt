@@ -14,14 +14,14 @@ input::-webkit-inner-spin-button {
 
   &__link {
     padding: 20px 40px;
-    color: $color-white;
+    color: $color-opposite;
     text-decoration: none;
     margin-right: 40px;
 
     transition: color 0.3s;
 
     &:hover {
-      color: $color-lagoone;
+      color: $color-hover;
     }
 
     &:last-child {

@@ -18,7 +18,7 @@
     color: $color-main;
 
     &--error {
-      border-bottom: 1px solid $color-red;
+      border-bottom: 1px solid $color-error;
     }
   }
 
@@ -36,7 +36,7 @@
 
     &:hover {
       background: $color-main;
-      color: $color-lagoone;
+      color: $color-hover;
       transform: scale(105%);
     }
 
