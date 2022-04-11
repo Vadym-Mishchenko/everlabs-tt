@@ -1,11 +1,10 @@
-import { Routes, Route, Link, HashRouter } from 'react-router-dom';
-
-import './App.scss';
-
+import { Routes, Route, Link } from 'react-router-dom';
 import { Home } from './components/Home/Home';
 import { Todos } from './components/Todos/Todos';
 import { Photos } from './components/Photos/Photos';
 import { TodoId } from './components/Todos/TodoId';
+
+import './App.scss';
 
 function App() {
   return (
@@ -15,14 +14,12 @@ function App() {
         <Link className="header__link" to='/photos'>Photos</Link>
         <Link className="header__link" to='/todos'>Todos</Link>
       </header>
-      {/* <HashRouter> */}
-        <Routes>
-          <Route exact path='/' element={<Home />} />
-          <Route exact path='/todos' element={<Todos />} />
-          <Route exact path='/photos' element={<Photos />} />
-          <Route exact path='/todos/:id' element={<TodoId />} />
-        </Routes>
-      {/* </HashRouter> */}
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/todos' element={<Todos />} />
+        <Route path='/photos' element={<Photos />} />
+        <Route path='/todos/:id' element={<TodoId />} />
+      </Routes>
     </div>
   );
 }
