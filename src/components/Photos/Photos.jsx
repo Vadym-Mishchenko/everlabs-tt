@@ -50,9 +50,12 @@ export const Photos = () => {
       > Get Photos
       </button>
       <ul>
-        {items.map(item => (
-          <img src={item.thumbnailUrl} alt={item.id} />
-        ))}
+        {items.map(item => {
+          return <div key={item.id}>
+            <img src={item.url} alt={item.title} />
+            <p>{item.title}</p>
+          </div>
+        })}
       </ul>
     </div >
   );
