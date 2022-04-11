@@ -15,15 +15,12 @@ function App() {
         <Link className="header__link" to='/photos'>Photos</Link>
         <Link className="header__link" to='/todos'>Todos</Link>
       </header>
-      <HashRouter>
-        <Routes>
-          <Route exact path='/' element={<Home />} />
-          <Route exact path='/todos' element={<Todos />} />
-          <Route exact path='/photos' element={<Photos />} />
-          <Route exact path='/todos/:id' element={<TodoId />} />
-        </Routes>
-      </HashRouter>
-
+      <Routes>
+        <Route exact path='/' element={<Home />} />
+        <Route exact path='/todos' element={<Todos />} />
+        <Route exact path='/photos' element={<Photos />} />
+        <Route exact path='/todos/:id' element={<TodoId />} />
+      </Routes>
     </div>
   );
 }
