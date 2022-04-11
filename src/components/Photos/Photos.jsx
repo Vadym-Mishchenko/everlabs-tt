@@ -12,7 +12,7 @@ export const Photos = () => {
 
   const handleChange = (e) => {
     setPhotoId(e.target.value);
-  }
+  };
 
   const setId = () => {
     if (photoId > 0 && photoId <= 100) {
@@ -35,7 +35,7 @@ export const Photos = () => {
     <div className="photos">
       <h1 className="photos__title">Photos Page</h1>
       <input
-        placeholder='Enter a number from 0 to 100'
+        placeholder='Enter a number from 1 to 100'
         className={classnames('photos__input', { 'photos__input--error': photoIdError })}
         type="number"
         min={1}

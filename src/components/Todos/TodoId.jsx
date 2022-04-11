@@ -9,6 +9,5 @@ export const TodoId = () => {
       <h1 className="todosId__title">Todo id: {id}</h1>
       <Link className="todosId__link" to={'/todos/'}>Back</Link>
     </div>
-
   )
 };

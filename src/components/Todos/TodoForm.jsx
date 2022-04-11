@@ -7,11 +7,11 @@ export const TodoForm = ({ addTodo }) => {
     e.preventDefault()
     addTodo(userInput)
     setUserInput("")
-  }
+  };
 
   const handleChange = (e) => {
     setUserInput(e.currentTarget.value)
-  }
+  };
 
   return (
     <>
@@ -19,7 +19,7 @@ export const TodoForm = ({ addTodo }) => {
         <input
           className="todos__input"
           type="text"
-          placeholder="Enter value"
+          placeholder="Enter todo"
           value={userInput}
           onChange={handleChange}
         />

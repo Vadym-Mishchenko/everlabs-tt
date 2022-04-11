@@ -22,21 +22,21 @@ export const Todos = () => {
         task: userInput,
         complete: false
       }
-      setTodos([...todos, newItem])
+      setTodos([newItem, ...todos])
     }
-  }
+  };
 
   const removeTodo = (id) => {
     setTodos([...todos.filter((todo) => todo.id !== id)])
-  }
+  };
 
   const isTodoComlete = (id) => {
     setTodos([
       ...todos.map((todo) =>
         todo.id === id ? { ...todo, complete: !todo.complete } : { ...todo }
-      )
+      ).sort((a, b) => Number(a.complete) - Number(b.complete))
     ])
-  }
+  };
 
   return (
     <div className="app__todos todos">
