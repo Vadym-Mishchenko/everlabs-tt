@@ -27,6 +27,7 @@
     width: 100px;
     height: 30px;
     font-size: 12px;
+    cursor: pointer;
     background: none;
     border: 2px solid $color-main;
     color: $color-main;
@@ -37,6 +38,10 @@
       background: $color-main;
       color: $color-lagoone;
       transform: scale(105%);
+    }
+
+    &:disabled {
+      cursor:not-allowed;
     }
   }
 }

@@ -8,6 +8,7 @@ const BASE_URL = 'https://jsonplaceholder.typicode.com/photos?albumId=';
 export const Photos = () => {
   const [items, setItems] = useState([]);
   const [photoId, setPhotoId] = useState('');
+  const [lastPhotoId, setLastPhotoId] = useState('');
   const [photoIdError, setPhotoIdError] = useState(false);
 
   const handleChange = (e) => {
@@ -24,6 +25,9 @@ export const Photos = () => {
             setItems(result);
           },
         )
+      setPhotoId('');
+      setLastPhotoId(photoId)
+
     }
     else {
       setPhotoIdError(true);
@@ -47,6 +51,7 @@ export const Photos = () => {
         typeof="button"
         className="photos__btn"
         onClick={setId}
+        disabled={+photoId === +lastPhotoId}
       > Get Photos
       </button>
       <ul>

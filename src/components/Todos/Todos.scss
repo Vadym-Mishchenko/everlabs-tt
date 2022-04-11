@@ -41,6 +41,16 @@
       color: $color-lagoone;
       transform: scale(105%);
     }
+
+    &--active {
+      background: $color-main;
+      color: $color-white;
+    }
+
+    &--todo {
+      border-right: none;
+      border-left: none;
+    }
   }
 
   &__check {
