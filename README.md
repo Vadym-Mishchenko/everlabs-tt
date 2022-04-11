@@ -9,4 +9,5 @@
 - JavaScript, HTML5, CSS3
 - SASS, BEM, Flex-box
 - npm: uuid, classnames
+- React localstorage
 - Responsive design

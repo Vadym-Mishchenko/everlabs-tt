@@ -1,4 +1,4 @@
-import { Routes, Route, Link, HashRouter } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 
 import './App.scss';
 
@@ -16,10 +16,11 @@ function App() {
         <Link className="header__link" to='/todos'>Todos</Link>
       </header>
       <Routes>
-        <Route exact path='/' element={<Home />} />
-        <Route exact path='/todos' element={<Todos />} />
-        <Route exact path='/photos' element={<Photos />} />
-        <Route exact path='/todos/:id' element={<TodoId />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/todos' element={<Todos />} >
+          <Route path=':id' element={<TodoId />} />
+        </Route>
+        <Route path='/photos' element={<Photos />} />
       </Routes>
     </div>
   );
